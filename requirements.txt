@@ -1,0 +1,4 @@
+pyTelegramBotAPI>=4.29,<5
+aiosqlite==0.20.0
+python-dotenv==1.0.1
+Pillow>=10.0,<13
