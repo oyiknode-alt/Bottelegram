@@ -1,12 +1,11 @@
 """SQLite storage module for the Telegram service-sales bot.
 All public functions are async to match bot.py's `await db.*` calls.
 """
-import os
 import sqlite3
 from pathlib import Path
 from typing import Optional
 
-DB_PATH = Path(os.getenv("DB_PATH", str(Path(__file__).with_name("bot_data.sqlite3"))))
+DB_PATH = Path(os.environ.get("DB_PATH", str(Path(__file__).with_name("bot_data.sqlite3"))))
 
 
 def _connect():
