@@ -1,6 +1,7 @@
 """SQLite storage module for the Telegram service-sales bot.
 All public functions are async to match bot.py's `await db.*` calls.
 """
+import os
 import sqlite3
 from pathlib import Path
 from typing import Optional
